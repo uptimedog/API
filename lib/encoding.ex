@@ -16,4 +16,11 @@ defmodule Rune.Encoding do
 
     "#{g} / #{h} / #{j} / #{u}"
   end
+
+  def test1() do
+    case Base.decode16("666F6F62617") do
+      {:ok, x} -> IO.puts(x)
+      _ -> IO.puts("decode16 error")
+    end
+  end
 end

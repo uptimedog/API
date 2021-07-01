@@ -109,4 +109,17 @@ defmodule Rune.Collections do
       end
     end
   end
+
+  def test1() do
+    k = [a: 1, b: 2]
+    IO.puts(k[:a])
+    IO.inspect(k[:c])
+
+    m = %{a: 1, b: 2}
+    IO.puts(m[:a])
+    IO.inspect(m[:c])
+
+    r = %{1.0 => "★", 1.5 => "★☆", 2.0 => "★★"}
+    IO.puts(r[1.5])
+  end
 end
