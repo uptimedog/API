@@ -1,10 +1,29 @@
 defmodule Rune.MixProject do
   use Mix.Project
 
+  @version "0.1.0"
+  @url_docs "http://hexdocs.pm/rune"
+  @url_github "https://github.com/clivern/rune"
+
   def project do
     [
       app: :rune,
-      version: "0.1.0",
+      name: "Rune",
+      description: "Learning elixir",
+      package: %{
+        files: [
+          "lib",
+          "mix.exs",
+          "LICENSE"
+        ],
+        licenses: ["MIT"],
+        links: %{
+          "Docs" => @url_docs,
+          "GitHub" => @url_github
+        },
+        maintainers: ["Clivern"]
+      },
+      version: @version,
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
       deps: deps()
@@ -21,7 +40,9 @@ defmodule Rune.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:dialyxir, "~> 1.2", only: [:dev], runtime: false}
+      {:dialyxir, "~> 1.2", only: [:dev], runtime: false},
+      # Documentation dependencies
+      {:ex_doc, "~> 0.28", optional: true, only: [:docs]}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
