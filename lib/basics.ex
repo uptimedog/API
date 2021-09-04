@@ -42,12 +42,14 @@ defmodule Basics do
     y = 34 * 4 / 3
     z = 3 - 23
 
+    IO.puts("#{x} #{y} #{z}")
+
     # division
-    div(100, 4)
+    IO.puts div(100, 4)
     # division
-    div(100, 4)
+    IO.puts div(100, 4)
     # remainder
-    rem(100, 4)
+    IO.puts rem(100, 4)
 
     IO.puts("Hello, World")
     IO.puts(1 + 3)
@@ -61,56 +63,56 @@ defmodule Basics do
     IO.puts(out.("Hello").("World"))
 
     # Integer
-    x = 3
+    # x = 3
 
     # String
-    y = "Hello"
+    # y = "Hello"
 
     # Floats
-    z = 3.14
+    # z = 3.14
     # Floats
-    v = 1.0e-10
+    # v = 1.0e-10
 
     # Booleans
-    k = true
+    # k = true
     # Atoms
-    j = :foo
+    # j = :foo
     # Atoms
-    p = :bar
+    # p = :bar
 
-    j == p
+    # j == p
 
-    :foo == :foo
+    # :foo == :foo
 
     # The booleans true and false are also the atoms :true and :false, respectively.
     # true
-    is_atom(true)
+    # is_atom(true)
     # true
-    is_boolean(true)
+    # is_boolean(true)
     # true
-    true === true
+    # true === true
 
     # String Concatenation
-    "Hello" <> "World"
+    # "Hello" <> "World"
 
-    name = "Sean"
+    # name = "Sean"
 
     # "Hello Sean"
-    "Hello " <> name
+    # "Hello " <> name
     # "Hello Sean"
-    "Hello #{name}"
+    # "Hello #{name}"
 
     # false
-    1 > 2
+    # 1 > 2
     # true
-    1 != 2
+    # 1 != 2
     # true
-    2 == 2
+    # 2 == 2
     # true
-    2 <= 3
+    # 2 <= 3
     # true
-    2 == 2.0
+    # 2 == 2.0
     # false
-    2 === 2.0
+    # 2 === 2.0
   end
 end
