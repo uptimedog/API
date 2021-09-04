@@ -58,6 +58,13 @@ docs:
 	$(mix) docs
 
 
+## publish: Publish rune
+.PHONY: publish
+publish:
+	@echo ">> ============= Publish rune ============= <<"
+	$(mix) hex.publish
+
+
 ## ci: Build docs
 .PHONY: ci
 ci: test
