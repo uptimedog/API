@@ -56,3 +56,8 @@ analyze:
 docs:
 	@echo ">> ============= Build docs ============= <<"
 	$(mix) docs
+
+
+## ci: Build docs
+.PHONY: ci
+ci: test

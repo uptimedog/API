@@ -16,8 +16,17 @@ jobs:
           otp-version: ${{matrix.otp}}
           elixir-version: ${{matrix.elixir}}
 
-      - run: make deps
-      - run: make fmt_check
-      - run: make test
-      - run: make analyze
-      - run: make build
+      - name: Get dependencies
+        run: make deps
+
+      - name: Check rune format
+        run: make fmt_check
+
+      - name: Test rune
+        run: make ci
+
+      - name: Analyze rune
+        run: make analyze
+
+      - name: Build rune
+        run: make build
