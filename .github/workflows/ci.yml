@@ -17,4 +17,7 @@ jobs:
           elixir-version: ${{matrix.elixir}}
 
       - run: make deps
+      - run: make fmt_check
       - run: make test
+      - run: make analyze
+      - run: make build
