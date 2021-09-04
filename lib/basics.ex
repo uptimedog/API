@@ -45,11 +45,11 @@ defmodule Basics do
     IO.puts("#{x} #{y} #{z}")
 
     # division
-    IO.puts div(100, 4)
+    IO.puts(div(100, 4))
     # division
-    IO.puts div(100, 4)
+    IO.puts(div(100, 4))
     # remainder
-    IO.puts rem(100, 4)
+    IO.puts(rem(100, 4))
 
     IO.puts("Hello, World")
     IO.puts(1 + 3)
