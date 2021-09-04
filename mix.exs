@@ -30,10 +30,8 @@ defmodule Rune.MixProject do
       docs: [
         source_ref: "v#{@version}",
         source_url: @url_github,
-        main: "README",
-        extras: [
-          "docs/README.md"
-        ]
+        main: "Rune",
+        extras: ["README.md"]
       ],
       preferred_cli_env: [
         docs: :docs

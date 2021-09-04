@@ -49,3 +49,10 @@ build:
 analyze:
 	@echo ">> ============= Build code ============= <<"
 	$(mix) dialyzer
+
+
+## docs: Build docs
+.PHONY: docs
+docs:
+	@echo ">> ============= Build docs ============= <<"
+	$(mix) docs
