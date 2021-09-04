@@ -26,7 +26,18 @@ defmodule Rune.MixProject do
       version: @version,
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      docs: [
+        source_ref: "v#{@version}",
+        source_url: @url_github,
+        main: "README",
+        extras: [
+          "docs/README.md"
+        ]
+      ],
+      preferred_cli_env: [
+        docs: :docs
+      ]
     ]
   end
 
