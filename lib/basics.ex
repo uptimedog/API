@@ -115,4 +115,70 @@ defmodule Rune.Basics do
     # false
     # 2 === 2.0
   end
+
+  def control() do
+    # x = "Hello"
+
+    # if String.valid?(x) do
+    #   IO.puts("#{inspect(x)} is a valid string")
+    # else
+    #   IO.puts("#{inspect(x)} is invalid string")
+    # end
+
+    # y = 1
+
+    # if y >= 1 do
+    #   IO.puts("y more or equals 1")
+    # else
+    #   IO.puts("y less than 1")
+    # end
+
+    # r =
+    #   unless is_integer("hello") do
+    #     "Not an Int"
+    #   end
+
+    # IO.puts(r)
+
+    # u = {:ok, "operation passed"}
+
+    # i =
+    #   case u do
+    #     {:ok, result} -> result
+    #     {:error} -> "Oh!"
+    #     _ -> "Default"
+    #   end
+
+    # IO.puts(i)
+
+    # o = :even
+
+    # k =
+    #   case o do
+    #     :even -> "o is even"
+    #     :odd -> "o is odd"
+    #   end
+
+    # IO.puts(k)
+
+    # p =
+    #   case {1, 2, 3} do
+    #     {1, x, 3} when x > 0 -> "Will match"
+    #     _ -> "Won't match"
+    #   end
+
+    # Will match
+    # IO.puts(p)
+
+    # x = 20
+
+    # y =
+    #   cond do
+    #     x > 20 -> 1
+    #     x < 20 -> 2
+    #     x == 20 -> 3
+    #   end
+
+    # IO.puts(y)
+  end
 end
