@@ -1,9 +1,10 @@
 mix          ?= mix
+iex          ?= iex
 
 
 help: Makefile
 	@echo
-	@echo " Choose a command run in Walrus:"
+	@echo " Choose a command run in Rune:"
 	@echo
 	@sed -n 's/^##//p' $< | column -t -s ':' |  sed -e 's/^/ /'
 	@echo
@@ -63,6 +64,13 @@ docs:
 publish:
 	@echo ">> ============= Publish rune ============= <<"
 	$(mix) hex.publish
+
+
+## i: Run interactive shell
+.PHONY: i
+i:
+	@echo ">> ============= Interactive shell ============= <<"
+	$(iex) -S mix
 
 
 ## ci: Build docs
