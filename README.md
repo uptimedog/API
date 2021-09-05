@@ -10,7 +10,7 @@ the package can be installed by adding `rune` to your list of dependencies in `m
 ```elixir
 def deps do
   [
-    {:rune, "~> 0.1.0"}
+    {:rune, "~> 0.1"}
   ]
 end
 ```

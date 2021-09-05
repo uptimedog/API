@@ -4,9 +4,9 @@
 
 defmodule BasicsTest do
   use ExUnit.Case
-  doctest Basics
+  doctest Rune.Basics
 
   test "sum two integers" do
-    assert Basics.sum(1, 2) == 3
+    assert Rune.Basics.sum(1, 2) == 3
   end
 end

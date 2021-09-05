@@ -1,7 +1,7 @@
 defmodule Rune.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
   @url_docs "http://hexdocs.pm/rune"
   @url_github "https://github.com/clivern/rune"
 
