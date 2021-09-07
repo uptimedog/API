@@ -180,5 +180,11 @@ defmodule Rune.Basics do
     #   end
 
     # IO.puts(y)
+
+    # for n <- [1, 2, 4, 5, 5] do
+    #   IO.puts("n = #{n}")
+    # end
+
+    # x = for n <- 1..4, do: n * n # [1, 4, 9, 16]
   end
 end
