@@ -8,8 +8,8 @@ defmodule Rune.Integer do
   def test() do
     # true
     IO.puts(is_even(10))
-    # false
-    IO.puts(is_odd(10))
+    # true
+    IO.puts(is_odd(3))
 
     # [1, 2, 3]
     x = Integer.digits(123)
