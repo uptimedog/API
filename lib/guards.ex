@@ -3,7 +3,7 @@
 # license that can be found in the LICENSE file.
 
 defmodule Rune.Guards do
-  # Custom Guard
+  # Custom Guards
   defguard is_even(x) when is_integer(x) and rem(x, 2) == 0
 
   def inspect_map(x) when is_map(x) and map_size(x) > 0 do
@@ -18,6 +18,7 @@ defmodule Rune.Guards do
     "value = #{inspect(value)}"
   end
 
+  # Usage of a custom guard
   def test_2(y) when is_even(y) do
     "y = #{inspect(y)}"
   end
