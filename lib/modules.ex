@@ -78,7 +78,7 @@ end
 # a = %Rune.Animal{name: "Joe", age: 390}
 # Rune.Talk.talk(a)
 
-defmodule Rune.Basics do
+defmodule Rune.Klo do
   def sum(x, y) do
     x + y
   end
@@ -88,9 +88,9 @@ defmodule Rune.Basics do
   end
 end
 
-# Rune.Basics.sum(1, 2) # returns 3
+# Rune.Klo.sum(1, 2) # returns 3
 
-defmodule Rune.Solution do
+defmodule Rune.Ue do
   def any?(a, b, c, d) do
     a or b or c or d
   end
@@ -100,19 +100,19 @@ defmodule Rune.Solution do
   end
 end
 
-# Rune.Solution.any?(true, false, true, false)
-# Rune.Solution.truthy?(true, true)
-# Rune.Solution.truthy?(true, false)
+# Rune.Ue.any?(true, false, true, false)
+# Rune.Ue.truthy?(true, true)
+# Rune.Ue.truthy?(true, false)
 
-defmodule Rune.Example do
+defmodule Rune.Opel do
   def greeting(name) do
     "Hello #{name}."
   end
 end
 
-# Rune.Example.greeting "Sean"  # "Hello Sean."
+# Rune.Opel.greeting "Sean"  # "Hello Sean."
 
-defmodule Rune.Example.Greetings do
+defmodule Rune.Opel.Greetings do
   def morning(name) do
     "Good morning #{name}."
   end
@@ -122,9 +122,9 @@ defmodule Rune.Example.Greetings do
   end
 end
 
-# Rune.Example.Greetings.morning "Sean"  # "Good morning Sean."
+# Rune.Opel.Greetings.morning "Sean"  # "Good morning Sean."
 
-defmodule Rune.Example do
+defmodule Rune.Rop do
   @greeting "Hello"
 
   def greeting(name) do
@@ -132,4 +132,22 @@ defmodule Rune.Example do
   end
 end
 
-# Rune.Example.greeting "Sean"  # "Hello Sean"
+# Rune.Rop.greeting "Sean"  # "Hello Sean"
+
+defmodule Rune.MathDemo do
+  def absolute(number) when number > 0 do
+    number
+  end
+
+  def absolute(number) when number == 0 do
+    0
+  end
+
+  def absolute(number) when number < 0 do
+    -number
+  end
+end
+
+# Rune.MathDemo.absolute(-1)  # 1
+# Rune.MathDemo.absolute(1)   # 1
+# Rune.MathDemo.absolute(0)   # 0
