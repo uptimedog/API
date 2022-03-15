@@ -14,7 +14,7 @@ help: Makefile
 .PHONY: fmt
 fmt:
 	@echo ">> ============= Format code ============= <<"
-	$(mix) format mix.exs "lib/**/*.{ex,exs}" "test/**/*.{ex,exs}"
+	$(mix) format
 
 
 ## fmt_check: Check code format.
