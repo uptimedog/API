@@ -27,8 +27,5 @@ jobs:
       - name: Test rune
         run: make ci
 
-      - name: Analyze rune
-        run: make analyze
-
       - name: Build rune
         run: make build
