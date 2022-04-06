@@ -20,33 +20,35 @@ defmodule Rune.Maps do
     IO.puts("#{colors[:secondary]}")
 
     # map size
-    IO.puts map_size(x)
+    IO.puts(map_size(x))
 
     # map filter
     z = Map.filter(x, fn {k, _v} -> k == :age end)
     IO.puts("#{z[:age]}")
 
     # get value by a key
-    IO.puts Map.get(x, :age)
+    IO.puts(Map.get(x, :age))
 
     # get a value by key
-    IO.puts Map.get(x, :ag, "default")
+    IO.puts(Map.get(x, :ag, "default"))
 
     # check if a key exist
-    IO.puts Map.has_key?(x, :ag) # false
+    # false
+    IO.puts(Map.has_key?(x, :ag))
 
-    IO.puts Map.has_key?(x, :age) # true
+    # true
+    IO.puts(Map.has_key?(x, :age))
 
     case Map.fetch(%{a: 1}, :e) do
-      {:ok, val} -> IO.puts val
-      :error -> IO.puts "not found"
+      {:ok, val} -> IO.puts(val)
+      :error -> IO.puts("not found")
     end
 
     case Map.fetch(%{a: 1}, :a) do
-      {:ok, val} -> IO.puts val
-      :error -> IO.puts "not found"
+      {:ok, val} -> IO.puts(val)
+      :error -> IO.puts("not found")
     end
 
-    Map.module_info
+    Map.module_info()
   end
 end
