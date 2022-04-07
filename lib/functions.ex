@@ -6,4 +6,8 @@ defmodule Rune.Functions do
   def hello(message \\ "Hello World") do
     IO.puts(message)
   end
+
+  defp phello() do
+    IO.puts("Private Function")
+  end
 end

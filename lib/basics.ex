@@ -186,5 +186,14 @@ defmodule Rune.Basics do
     # end
 
     # x = for n <- 1..4, do: n * n # [1, 4, 9, 16]
+
+    case {1, 2, 3} do
+      {1, x, 3} when x > 0 -> IO.puts("x more than 0, x = #{x}")
+      {1, x, 3} when x < 0 -> IO.puts("x less than 0, x = #{x}")
+      {1, x, 3} when x == 0 -> IO.puts("x equals 0, x = #{x}")
+    end
+
+    IO.inspect("Elixir rocks" |> String.split() |> hd)
+    IO.inspect("Elixir rocks" |> String.split() |> tl)
   end
 end
