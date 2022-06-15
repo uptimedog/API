@@ -11,5 +11,20 @@ defmodule Rune.Atoms do
     if is_atom(y) do
       IO.puts(Atom.to_charlist(y))
     end
+
+    # true
+    IO.puts(:f == :f)
+    # false
+    IO.puts(:f == :g)
+    # true
+    IO.puts(is_atom(:df))
+    # false
+    IO.puts(is_atom("sf"))
+    # true
+    IO.puts(is_boolean(false))
+    # true
+    IO.puts(is_boolean(true))
+    # false
+    IO.puts(is_boolean("sf"))
   end
 end
