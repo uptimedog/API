@@ -80,11 +80,11 @@ end
 
 defmodule Rune.Klo do
   def sum(x, y) do
-    x + y
+    su(x, y)
   end
 
-  defp mult(x, y) do
-    x * y
+  defp su(x, y) do
+    x + y
   end
 end
 

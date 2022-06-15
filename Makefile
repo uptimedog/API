@@ -42,6 +42,7 @@ test:
 .PHONY: build
 build:
 	@echo ">> ============= Build code ============= <<"
+	-rm -rf _build
 	$(mix) compile --warnings-as-errors
 
 
