@@ -22,9 +22,9 @@ defmodule Rune.Enum do
     Enum.each([1, 2, 3, 4], fn x -> IO.puts(x) end)
 
     # Update each element of a list
-    x = Enum.map([1, 2, 3, 4], fn x -> x * x end)
-    x = Enum.map([1, 2, 3, 4], &(&1 * &1))
-    x = Enum.map([1, 2, 3, 4], &Rune.EnumAdding.plus_three(&1))
+    Enum.map([1, 2, 3, 4], fn x -> x * x end)
+    Enum.map([1, 2, 3, 4], &(&1 * &1))
+    Enum.map([1, 2, 3, 4], &Rune.EnumAdding.plus_three(&1))
 
     # Get min value of a list
     Enum.min([1, 2, 3, 4])

@@ -33,6 +33,11 @@ defmodule Rune.Functions do
     out = fn %{name: person_name} -> IO.puts("Hello #{person_name}!") end
     out.(%{name: "Joe"})
     pm(%{name: "Joe"})
+
+    f = fn x -> x end
+
+    Function.info(f, :arity)
+    Function.info(f, :type)
   end
 
   def pm(%{name: person_name} = person) do
