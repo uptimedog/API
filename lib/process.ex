@@ -4,6 +4,8 @@
 
 defmodule Rune.Bounce do
   def report do
+    IO.puts("Bounce Process Started")
+
     receive do
       msg ->
         IO.puts("Received #{inspect(msg)}")
@@ -16,5 +18,22 @@ defmodule Rune.Process do
   def test do
     pid = spawn(Rune.Bounce, :report, [])
     send(pid, "hey")
+    pid
   end
 end
+
+defmodule Rune.ProcessUtil do
+  def info(pid) do
+    pid
+    |> Process.info()
+  end
+
+  def alive?(pid) do
+    pid
+    |> Process.alive?()
+  end
+end
+
+# pid = Rune.Process.test
+# Rune.ProcessUtil.info(pid)
+# Rune.ProcessUtil.alive?(pid)

@@ -26,6 +26,7 @@ defmodule Rune.MixProject do
       version: @version,
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
+      compilers: [] ++ Mix.compilers(),
       deps: deps(),
       docs: [
         source_ref: "v#{@version}",
